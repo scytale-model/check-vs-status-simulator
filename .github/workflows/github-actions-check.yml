@@ -1,0 +1,15 @@
+# File: .github/workflows/github-actions-check.yml
+name: GitHub Actions Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: github-actions/check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo test
+        run: echo "✅ GitHub Actions check passed"
