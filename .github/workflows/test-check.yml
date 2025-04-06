@@ -1,0 +1,15 @@
+name: Test Check (GitHub Actions)
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: github-actions/test-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run test
+        run: echo "✅ GitHub Actions test check passed"
+        # run: exit 1
